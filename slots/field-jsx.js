@@ -15,15 +15,3 @@ export default {
     )
   }
 }
-
-
-const h = this.$createElement;
-
-this.$notify({
-  title: 'GitHub',
-  message: h('div', [
-    h('p', '[GitHub] Subscribed to ElemeFE/element notifications'),
-    h('el-button', {}, '已读')
-  ])
-});
-

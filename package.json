@@ -1,6 +1,12 @@
 {
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:QingWei-Li/vue-tricks.git"
+  },
   "scripts": {
     "vue-build": "cd vue-build && vue build hello.vue",
-    "vue-loader": "cd vue-loader && vue build app.vue -c vue.config.js"
+    "vue-loader": "cd vue-loader && vue build app.vue -c vue.config.js",
+    "slots": "cd slots && vue build app.vue",
+    "props": "cd props && vue build app.vue"
   }
 }
