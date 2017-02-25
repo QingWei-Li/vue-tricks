@@ -88,7 +88,7 @@ vue: {
 </script>
 ```
 
-其实通过配置 `transformToRequire` 就可以让我们向给 `img` 传图片一样方便。
+其实通过配置 `transformToRequire` 就可以让我们像给 `img` 传图片一样方便。
 
 ```js
 vue: {
