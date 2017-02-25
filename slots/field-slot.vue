@@ -12,22 +12,29 @@
     props: ['type', 'label'],
 
     created() {
-      this.renderInput()
+      // this.$slots.default = [ this.renderField() ]
+      console.log(123)
+      console.log(this.type)
+    },
+
+    computed: {
+      '$slots'() {
+        const h = this.$createElement
+        const tag = this.type === 'textarea' ? 'textarea' : 'input'
+        const type = this.type === 'textarea' ? '' : this.type
+
+        console.log(this.type)
+        return [h(tag, { props: { type } })]
+      }
     },
 
     methods: {
-      renderInput() {
+      renderField() {
         const h = this.$createElement
+        const tag = this.type === 'textarea' ? 'textarea' : 'input'
+        const type = this.type === 'textarea' ? '' : this.type
 
-        let tag = 'input'
-        let { type } = this
-
-        if (this.type === 'textarea') {
-          tag = this.type
-          type = ''
-        }
-
-        this.$slots.default = [h(tag, { props: { type } })]
+        return h(tag, { props: { type } })
       }
     }
   }

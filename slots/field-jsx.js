@@ -1,25 +1,29 @@
-
 export default {
   name: 'field',
 
   props: ['type', 'label'],
 
   render (h) {
-    let tag = 'input'
-    let { type, label } = this
-
-    if (this.type === 'textarea') {
-      tag = this.type
-      type = ''
-    }
+    const tag = this.type === 'textarea' ? 'textarea' : 'input'
+    const type = this.type === 'textarea' ? '' : this.type
 
     return (
       <div>
-        <label>{ label }</label>
+        <label>{ this.label }</label>
         { h(tag, { props: { type } }) }
       </div>
     )
   }
 }
 
+
+const h = this.$createElement;
+
+this.$notify({
+  title: 'GitHub',
+  message: h('div', [
+    h('p', '[GitHub] Subscribed to ElemeFE/element notifications'),
+    h('el-button', {}, '已读')
+  ])
+});
 

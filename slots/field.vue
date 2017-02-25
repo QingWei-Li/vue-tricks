@@ -3,7 +3,7 @@
     <label>{{ label }}</label>
 
     <input v-if="type !== 'textarea'" :type="type">
-    <textarea v-if="type === 'textarea'"></textarea>
+    <textarea v-else></textarea>
   </div>
 </template>
 
