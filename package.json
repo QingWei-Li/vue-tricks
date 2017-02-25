@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "vue-build": "cd vue-build && vue build hello.vue",
+    "vue-loader": "cd vue-loader && vue build app.vue -c vue.config.js"
+  }
+}
