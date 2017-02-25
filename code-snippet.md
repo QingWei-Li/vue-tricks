@@ -13,7 +13,7 @@
 
 会渲染出一个 input 和 textarea：
 
-![slots-field](/Users/liqingwei/Documents/projects/repo/vue-tricks/media/slots-field.png)
+![slots-field](./media/slots-field.png)
 
 那么我们用 Vue 模板写就需要用根据 `type` 判断当前渲染哪个组件。
 
@@ -115,7 +115,7 @@ this.$notify({
 });
 ```
 
-![notifications](/Users/liqingwei/Documents/projects/repo/vue-tricks/media/notifications.png)
+![notifications](./media/notifications.png)
 
 ## jsx
 
