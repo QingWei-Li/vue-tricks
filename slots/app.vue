@@ -32,7 +32,7 @@
         this.type = 'textarea'
       }, 500)
     }
-  };
+  }
 </script>
 
 <style>

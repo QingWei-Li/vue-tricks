@@ -12,5 +12,5 @@
     name: 'field',
 
     props: ['type', 'label']
-  };
+  }
 </script>
