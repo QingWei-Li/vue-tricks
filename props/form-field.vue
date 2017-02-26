@@ -21,4 +21,8 @@
   }
 </script>
 
-
+<style>
+  .tip {
+    color: #f66;
+  }
+</style>
